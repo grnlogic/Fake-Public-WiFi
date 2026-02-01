@@ -1,0 +1,26 @@
+# Capture files (PCAP files are large and should not be committed)
+captures/*.pcap
+captures/*.pcapng
+captures/*.txt
+
+# Keep captures directory structure
+!captures/.gitkeep
+
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# NetworkManager configs
+99-unmanage-*.conf
+
+# WPA supplicant temp
+/tmp/wpa_supplicant_*.conf
+
+# Log files
+*.log
+
+# PID files
+*.pid
+/tmp/wifi-lab-pids.txt
